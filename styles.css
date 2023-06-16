@@ -67,7 +67,17 @@ body {
   }
   
   .contact-info p {
-    margin: 5px 0;
+    position: relative;
+    padding-left: 30px; /* Adjust the padding as needed */
+  }
+  
+  .contact-info img {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    width: 20px; /* Adjust the size of the icons as needed */
+    height: 20px;
   }
   
   .contact-info a {
