@@ -24,7 +24,37 @@ body {
     border-radius: 50%;
     object-fit: cover;
   }
+
+  .left-align {
+    text-align: left;
+  }
+
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-gap: 2px;
+  }
   
+  .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .skill img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .skill p {
+    margin-top: 10px;
+    text-align: center;
+  }  
+
   h1 {
     margin-top: 10px;
     margin-bottom: 20px;
@@ -37,7 +67,17 @@ body {
   }
   
   .contact-info p {
-    margin: 5px 0;
+    position: relative;
+    padding-left: 30px; /* Adjust the padding as needed */
+  }
+  
+  .contact-info img {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    width: 20px; /* Adjust the size of the icons as needed */
+    height: 20px;
   }
   
   .contact-info a {
