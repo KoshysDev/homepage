@@ -9,6 +9,9 @@ body {
     display: flex;
     max-width: 800px;
     margin: 0 auto;
+    background-color: #f2f2f2;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .left-panel {
@@ -127,4 +130,13 @@ h1 {
     margin: 5px 0 0;
     font-size: 14px;
     color: #666;
+}
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
